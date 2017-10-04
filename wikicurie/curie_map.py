@@ -1,8 +1,7 @@
 """
 curie_map is a map of prefixes to metadata
 
-Prefixes match the prefixes in:
-https://github.com/prefixcommons/biocontext/blob/master/registry/uber_context.jsonld
+Prefixes match the prefixes in https://github.com/prefixcommons/biocontext/blob/master/registry/uber_context.jsonld
 
 values:
 pid: URI for the Wikidata property
@@ -10,15 +9,11 @@ uri: an external URI (optional, not currently used for anything)
 formatter: a string formatter or function that is used to convert the curie value to wikidata value (default: '{}')
 reverse_formatter: a string formatter or function that is used to convert the wikidata value to curie value  (default: '{}')
 
+Example:
+
 """
 
-
 curie_map = {
-    'GO': {
-        'pid': 'P686',
-        'formatter': 'GO:{}',
-        'reverse_formatter': lambda s: s.replace("GO:", "")
-    },
     'NCBITaxon': {
         'pid': 'P685',
     },
@@ -98,8 +93,14 @@ curie_map = {
     'ICD9': {
         'pid': 'P493',
     },
-    'ICD10CM': {
+    'ICD10': {
         'pid': 'P494',
+    },
+    'ICD10CM': {
+        'pid': 'P4229',
+    },
+    'ICD9CM': {
+        'pid': 'P1692'
     },
     'wd': {
         'uri': 'http://www.wikidata.org/entity/',
