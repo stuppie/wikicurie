@@ -14,6 +14,10 @@ Example:
 """
 
 curie_map = {
+    'UBERON': {
+        'pid': 'P1554',
+        'uri': 'http://purl.obolibrary.org/obo/UBERON_',
+    },
     'NCBITaxon': {
         'pid': 'P685',
     },
