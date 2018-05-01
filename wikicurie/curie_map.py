@@ -20,6 +20,10 @@ curie_map = {
         'formatter': 'GO:{}',
         'reverse_formatter': lambda s: s.replace("GO:", "")
     },
+    'UBERON': {
+        'pid': 'P1554',
+        'uri': 'http://purl.obolibrary.org/obo/UBERON_',
+    },
     'NCBITaxon': {
         'pid': 'P685',
     },

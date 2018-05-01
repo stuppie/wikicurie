@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='wikicurie',
-    version='0.0.1',
+    version='0.0.2',
     author='Greg Stupp',
     author_email='stuppie@gmail.com',
     url='https://github.com/stuppie/wikicurie',
