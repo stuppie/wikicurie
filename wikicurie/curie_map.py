@@ -14,6 +14,12 @@ Example:
 """
 
 curie_map = {
+    'GO': {
+        'pid': 'P686',
+        'uri': 'http://purl.obolibrary.org/obo/GO_',
+        'formatter': 'GO:{}',
+        'reverse_formatter': lambda s: s.replace("GO:", "")
+    },
     'NCBITaxon': {
         'pid': 'P685',
     },
