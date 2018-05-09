@@ -64,6 +64,10 @@ curie_map = {
         'uri': 'http://purl.obolibrary.org/obo/UMLS_',
         'pid': 'P2892'
     },
+    'UMLS_CUI': {
+        'uri': 'http://purl.obolibrary.org/obo/UMLS_',
+        'pid': 'P2892'
+    },
     'ECO': {
         'uri': 'http://purl.obolibrary.org/obo/ECO_',
         'pid': 'P3811',
