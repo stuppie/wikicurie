@@ -123,6 +123,12 @@ curie_map = {
     'EC': {
         'pid': 'P591',
     },
+    'HP': {
+        'uri': 'http://purl.obolibrary.org/obo/HP_',
+        'pid': 'P3841',
+        'formatter': 'HP:{}',
+        'reverse_formatter': lambda s: s.replace("HP:", "")
+    },
     'wd': {
         'uri': 'http://www.wikidata.org/entity/',
         'pid': 'http://www.wikidata.org/entity/',  # placeholder
