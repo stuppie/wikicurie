@@ -58,3 +58,23 @@ class CurieUtil(object):
         elif hasattr(cm['reverse_formatter'], '__call__'):
             curie_value = cm['reverse_formatter'](value)
         return ns + ':' + curie_value
+
+    @staticmethod
+    def uri_to_curie(uri: str):
+        """
+        converts a URI to a curie. Does not need to understand anything about the namespace
+        function simply take everything after the last underscore as the 'value', and the
+        string between the last '/' and the '_' as the namespace.
+        Throws an exception if there are no slashes or semicolons
+        """
+        assert "/" in uri
+        end_uri = uri.split("/")[-1]
+        assert end_uri.count("_") == 1
+        curie = end_uri.replace("_", ":")
+        return curie
+
+    def is_valid_namespace(self, namespace: str):
+        """
+        check if the namespace exists in the curie_map
+        """
+        return namespace in self.curie_map

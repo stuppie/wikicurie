@@ -1,4 +1,5 @@
 from .wikicurie import CurieUtil
+import unittest
 
 cu = CurieUtil()
 
@@ -31,3 +32,12 @@ def test_wd_to_pmid():
     value = "1234"
     curie = cu.make_curie(pid, value)
     assert curie == "PUBMED:1234"
+
+
+class MyTestCase(unittest.TestCase):
+    def test_uri_to_curie(self):
+        uri = "http://purl.obolibrary.org/obo/UBERON_0026700"
+        assert cu.uri_to_curie(uri) == "UBERON:0026700"
+
+        with self.assertRaises(Exception):
+            cu.uri_to_curie("http://purl.bioontology.org/ontology/provisional/f17c9aff-4a92-418e-989f-b8e9dd62caf6")
