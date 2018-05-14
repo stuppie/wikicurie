@@ -56,7 +56,15 @@ curie_map = {
         'uri': 'http://purl.obolibrary.org/obo/MESH_',
         'pid': 'P486'
     },
+    'MSH': {
+        'uri': 'http://purl.obolibrary.org/obo/MESH_',
+        'pid': 'P486'
+    },
     'UMLS': {
+        'uri': 'http://purl.obolibrary.org/obo/UMLS_',
+        'pid': 'P2892'
+    },
+    'UMLS_CUI': {
         'uri': 'http://purl.obolibrary.org/obo/UMLS_',
         'pid': 'P2892'
     },
@@ -111,6 +119,9 @@ curie_map = {
     },
     'ICD9CM': {
         'pid': 'P1692'
+    },
+    'EC': {
+        'pid': 'P591',
     },
     'wd': {
         'uri': 'http://www.wikidata.org/entity/',
