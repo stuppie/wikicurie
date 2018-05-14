@@ -67,9 +67,9 @@ class CurieUtil(object):
         string between the last '/' and the '_' as the namespace.
         Throws an exception if there are no slashes or semicolons
         """
-        assert "/" in uri
+        assert "/" in uri, "No '/' found in {}".format(uri)
         end_uri = uri.split("/")[-1]
-        assert end_uri.count("_") == 1
+        assert end_uri.count("_") == 1, "No '_' found in {} ({})".format(end_uri, uri)
         curie = end_uri.replace("_", ":")
         return curie
 
