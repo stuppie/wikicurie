@@ -129,6 +129,12 @@ curie_map = {
         'formatter': 'HP:{}',
         'reverse_formatter': lambda s: s.replace("HP:", "")
     },
+    'ORDO': {
+        'pid': 'P1550'
+    },
+    'NCI': {
+        'pid': 'P1748',
+    },
     'wd': {
         'uri': 'http://www.wikidata.org/entity/',
         'pid': 'http://www.wikidata.org/entity/',  # placeholder
