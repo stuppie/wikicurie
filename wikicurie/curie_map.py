@@ -135,6 +135,9 @@ curie_map = {
     'NCI': {
         'pid': 'P1748',
     },
+    'GARD': {
+        'pid': 'P4317'
+    },
     'wd': {
         'uri': 'http://www.wikidata.org/entity/',
         'pid': 'http://www.wikidata.org/entity/',  # placeholder
