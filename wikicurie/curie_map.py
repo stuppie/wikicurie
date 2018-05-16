@@ -138,6 +138,9 @@ curie_map = {
     'GARD': {
         'pid': 'P4317'
     },
+    'NDFRT': {
+        'pid': 'P2115'
+    },
     'wd': {
         'uri': 'http://www.wikidata.org/entity/',
         'pid': 'http://www.wikidata.org/entity/',  # placeholder
