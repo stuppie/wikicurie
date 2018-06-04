@@ -132,7 +132,13 @@ curie_map = {
     'ORDO': {
         'pid': 'P1550'
     },
+    'Orphanet': {
+        'pid': 'P1550'
+    },
     'NCI': {
+        'pid': 'P1748',
+    },
+    'NCIT': {
         'pid': 'P1748',
     },
     'GARD': {
