@@ -20,6 +20,12 @@ curie_map = {
         'formatter': 'GO:{}',
         'reverse_formatter': lambda s: s.replace("GO:", "")
     },
+    'MONDO': {
+        'pid': 'P5270',
+        'uri': 'http://purl.obolibrary.org/obo/MONDO_',
+        'formatter': 'MONDO:{}',
+        'reverse_formatter': lambda s: s.replace("MONDO:", "")
+    },
     'UBERON': {
         'pid': 'P1554',
         'uri': 'http://purl.obolibrary.org/obo/UBERON_',
