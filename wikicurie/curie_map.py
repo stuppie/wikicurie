@@ -147,6 +147,9 @@ curie_map = {
     'Orphanet': {
         'pid': 'P1550'
     },
+    'ORPHA': {
+        'pid': 'P1550'
+    },
     'NCI': {
         'pid': 'P1748',
     },
