@@ -5,7 +5,7 @@ setup(
     version='0.0.2',
     author='Greg Stupp',
     author_email='stuppie@gmail.com',
-    url='https://github.com/stuppie/wikicurie',
+    url='https://github.com/SuLab/wikicurie',
     description='Library for working with Wikidata CURIEs',
     license='BSD3',
     keywords='ontology wikidata curie',
